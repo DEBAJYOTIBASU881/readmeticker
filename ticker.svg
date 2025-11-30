@@ -1,7 +1,25 @@
-<svg width="800" height="50" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
   <rect width="100%" height="100%" fill="#000000"/>
-  <text x="800" y="35" font-family="Fira Code" font-size="20" fill="#00FF00">
-    Building Human-Centric AI • AI that Understands Emotion and Context • Engineering Futuristic Intelligent Systems • Let's Shape Tomorrow With AI
-    <animate attributeName="x" from="800" to="-2000" dur="20s" repeatCount="indefinite" />
+
+  <text x="1000" y="35"
+        font-family="Fira Code"
+        font-size="21"
+        fill="#33CCFF"
+        filter="url(#neonGlow)">
+    Building Human-Centric AI • AI that Understands Emotion and Context • Engineering Futuristic Intelligent Systems • Let's Shape Tomorrow With AI • Building Human-Centric AI • AI that Understands Emotion and Context • Engineering Futuristic Intelligent Systems • Let's Shape Tomorrow With AI
+    <animate attributeName="x"
+             from="1000" to="-3500"
+             dur="17s"
+             repeatCount="indefinite"/>
   </text>
 </svg>
